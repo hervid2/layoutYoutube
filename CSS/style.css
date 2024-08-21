@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    display: grid;
+    height: 100vh;
+    /* Grid de 2c x 2r */
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 56px 1fr;
+    grid-template-areas: 
+    'header header'
+    'sidebar content';
+}
+.header{
+    grid-area: header;
+    border-bottom: 1px solid #c2c2c2;
+}
+.sidebar{
+    grid-area: sidebar;
+    border-right: 1px solid #c2c2c2;
+}
+.content{
+    grid-area: content;
+    
+    
+}
